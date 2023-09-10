@@ -2,19 +2,14 @@
     <section class="content-header">
         <h1>
             <?= $title ?>
-            <small><?= $subtitle ?></small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="<?= base_url('index.php/admin/dashboard') ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active"><?= $title ?></li>
-        </ol>
     </section>
     <section class="content">
         <div class="row">
             <div class="col-md-4">
                 <div class="box">
                     <div class="box-header">
-                        <h4 class="box-title">Information Issuing</h4>
+                        <h4 class="box-title">Informasi Barang Keluar</h4>
                         <button class="btn btn-primary btn-sm pull-right" onclick="history.back(-1)">
                             <div class="fa fa-arrow-left"></div> Kembali
                         </button>
@@ -52,9 +47,9 @@
             <div class="col-md-8">
                 <div class="box">
                     <div class="box-header">
-                        <h4 class="box-title">Product Transaction Issuing</h4>
+                        <h4 class="box-title">Transaksi Barang Keluar</h4>
                         <button class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#tambahData">
-                            <div class="fa fa-plus"></div> Tambah Product
+                            <div class="fa fa-plus"></div> Tambah Obat
                         </button>
                     </div>
                     <div class="box-body">
@@ -63,8 +58,8 @@
                                 <thead>
                                     <tr>
                                         <th width="10px">#</th>
-                                        <th>Part Number</th>
-                                        <th>Product</th>
+                                        <th>Kode Barang</th>
+                                        <th>Obat</th>
                                         <th>Satuan</th>
                                         <th>Jumlah</th>
                                         <th>Aksi</th>

@@ -52,33 +52,6 @@
 
                 </div>
             </div>
-            <!--
-            <div class="col-md-7">
-                <div class="box">
-                    <div class="box-header">
-                        <h4 class="box-title">Receiving Detail</h4>
-                        <button class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#tambahData">
-                            <div class="fa fa-plus"></div> Tambah Data
-                        </button>
-                    </div>
-                    <div class="box-body">
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-striped table-hover" id="dataTable">
-                                <thead>
-                                    <tr>
-                                        <th>id desc</th>
-                                        <th>j</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
         </div>
     </section>
 </div>

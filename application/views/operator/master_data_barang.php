@@ -4,14 +4,7 @@
             <?= $title ?>
             <small><?= $subtitle ?></small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="<?= base_url('index.php/operator/o_dashboard') ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active"><?= $title ?></li>
-        </ol>
     </section>
-    <?php
-    date_default_timezone_set('Asia/Jakarta');
-    ?>
     <section class="content">
         <div class="box">
             <div class="box-header">

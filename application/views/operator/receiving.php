@@ -7,12 +7,6 @@
     <section class="content">
         <div class="box">
             <div class="box-header">
-                <!--
-                <a href="<?= base_url('index.php/operator/receiving/form_receiving/') ?>" class="btn btn-primary">
-                    <div class="fa fa-plus"></div> Add Receiving
-                </a>
-                -->
-
                 <button class="btn btn-primary" data-toggle="modal" data-target="#tambahData">
                     <div class="fa fa-plus"></div> Tambah Barang Masuk
                 </button>

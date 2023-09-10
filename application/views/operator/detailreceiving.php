@@ -2,19 +2,14 @@
     <section class="content-header">
         <h1>
             <?= $title ?>
-            <small><?= $subtitle ?></small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="<?= base_url('index.php/admin/dashboard') ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active"><?= $title ?></li>
-        </ol>
     </section>
     <section class="content">
         <div class="row">
             <div class="col-md-4">
                 <div class="box">
                     <div class="box-header">
-                        <h4 class="box-title">Information Receiving</h4>
+                        <h4 class="box-title">Informasi Barang Masuk</h4>
                         <button class="btn btn-primary btn-sm pull-right" onclick="history.back(-1)">
                             <div class="fa fa-arrow-left"></div> Kembali
                         </button>
@@ -24,12 +19,12 @@
                             <table class="table table-bordered table-striped table-hover">
                                 <?php foreach ($receiving->result_array() as $rcv) { ?>
                                     <tr>
-                                        <td>Date</td>
+                                        <td>Tanggal</td>
                                         <td>:</td>
                                         <td><?= $rcv['date'] ?></td>
                                     </tr>
                                     <tr>
-                                        <td>No Receiving</td>
+                                        <td>Faktur</td>
                                         <td>:</td>
                                         <td><?= $rcv['no_receiving'] ?></td>
                                     </tr>
@@ -52,7 +47,7 @@
             <div class="col-md-8">
                 <div class="box">
                     <div class="box-header">
-                        <h4 class="box-title">Product Transaction</h4>
+                        <h4 class="box-title">Transaksi Barang Masuk</h4>
                         <button class="btn btn-primary btn-sm pull-right" data-toggle="modal" data-target="#tambahData">
                             <div class="fa fa-plus"></div> Tambah Product
                         </button>
@@ -63,8 +58,8 @@
                                 <thead>
                                     <tr>
                                         <th width="10px">#</th>
-                                        <th>Part Number</th>
-                                        <th>Product</th>
+                                        <th>Kode Barang</th>
+                                        <th>Nama Obat</th>
                                         <th>Satuan</th>
                                         <th>Jumlah</th>
                                         <th>Aksi</th>

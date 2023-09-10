@@ -4,14 +4,7 @@
             <?= $title ?>
             <small><?= $subtitle ?></small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="<?= base_url('index.php/admin/dashboard') ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active"><?= $title ?></li>
-        </ol>
     </section>
-    <?php
-    date_default_timezone_set('Asia/Jakarta');
-    ?>
     <section class="content">
         <div class="box">
             <div class="box-body">
@@ -40,42 +33,21 @@
                     ?>
                 </form>
 
-                <!-- Belum Ketemu Solusinya untuk tabel
-                <div class="box-body">
-                    <div class="table-responsive">
-                        <table class="table table-bordered table-striped table-hover" id="dataTable">
-                            <thead>
-                                <tr>
-                                    <th width="10px">#</th>
-                                    <th>Tahun Ajaran</th>
-                                    <th>Status</th>
-                                    <th>Aksi</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-
-
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-                -->
-
                 <div class="table-responsive" style="margin-top: 10px;">
                     <div class="table-responsive">
                         <table class="table table-bordered table-striped table-hover" id="dataTable">
                             <thead>
                                 <tr>
                                     <th>Tanggal</th>
-                                    <th>Part Number</th>
-                                    <th>Description</th>
+                                    <th>Kode Barang</th>
+                                    <th>Deskripsi</th>
                                     <th>Kategori</th>
-                                    <th>Brand</th>
-                                    <th>Uom</th>
+                                    <th>Nama Obat</th>
+                                    <th>Satuan</th>
                                     <th>Move Type</th>
                                     <th>Price</th>
                                     <th>Remarks</th>
-                                    <th>Stock</th>
+                                    <th>Stok</th>
                                 </tr>
                             </thead>
                             <tbody>

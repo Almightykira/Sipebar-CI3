@@ -33,7 +33,7 @@
   <div class="login-logo">
     <?php foreach ($aplikasi->result_array() as $row) { ?>
       <center><img src="<?= base_url('assets/logo/').$row['logo'] ?>" alt="" class="img-responsive" width="50%" style="margin-bottom: 15px"></center>
-      <a href="<?= base_url('index.php/home') ?>"><?= $row['nama'] ?></a>
+      <a href="<?= base_url('index.php/home') ?>"><?= $row['nama'] ?></a></center>
     <?php } ?>
   </div>
   <!-- /.login-logo -->

@@ -55,7 +55,7 @@ class Issuing extends CI_Controller
 
     public function detail_issuing($idIssuing)
     {
-        $data['title']      = 'Detail Issuing';
+        $data['title']      = 'Detail Barang Keluar';
         $data['subtitle']   = 'Insert Issuing transaction';
 
         $data['idIssuing']        = $idIssuing;
@@ -148,8 +148,8 @@ class Issuing extends CI_Controller
     public function delete($id)
     {
         $where = array('id' => $id);
-        $this->m_model->delete($where, 'tb_receiving');
-        $this->session->set_flashdata('pesan', 'Data Satuan Berhasil dihapus!');
+        $this->m_model->delete($where, 'tb_issuing');
+        $this->session->set_flashdata('pesan', 'Data barang keluar Berhasil dihapus!');
         redirect('operator/issuing');
     }
 }

@@ -17,7 +17,7 @@
                         <thead>
                             <tr>
                                 <th width="10px">#</th>
-                                <th>Brand</th>
+                                <th>Nama Obat</th>
                                 <th>Aksi</th>
                             </tr>
                         </thead>

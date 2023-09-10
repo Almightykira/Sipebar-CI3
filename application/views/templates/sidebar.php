@@ -22,6 +22,11 @@
 
         </li>
         <?php if ($this->session->userdata('level') == 'Administrator') { ?>
+          <li <?= $this->uri->segment(2) == 'master_data_barang' || $this->uri->segment(2) == '' ? 'class="active"' : '' ?>>
+            <a href="<?= base_url('index.php/admin/master_data_barang') ?>">
+              <i class="fa fa-shopping-bag"></i> <span>Kelola Data Obat</span>
+            </a>
+          </li>
           <li class="treeview  <?= $this->uri->segment(2) == 'user' ||
                                   $this->uri->segment(2) == 'aplikasi' ||
                                   $this->uri->segment(2) == 'log' ||

@@ -53,8 +53,7 @@ class Receiving extends CI_Controller
 
     public function detail_receiving($idReceiving)
     {
-        $data['title']      = 'Detail Receiving';
-        $data['subtitle']   = 'Insert receiving transaction';
+        $data['title']      = 'Detail Barang Masuk';
 
         $data['idReceiving']        = $idReceiving;
         $this->db->where('id', $idReceiving);
@@ -149,7 +148,7 @@ class Receiving extends CI_Controller
     {
         $where = array('id' => $id);
         $this->m_model->delete($where, 'tb_receiving');
-        $this->session->set_flashdata('pesan', 'Data Satuan Berhasil dihapus!');
+        $this->session->set_flashdata('pesan', 'Data barang masuk Berhasil dihapus!');
         redirect('operator/receiving');
     }
 }

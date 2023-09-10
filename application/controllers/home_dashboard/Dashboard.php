@@ -19,10 +19,6 @@ class Dashboard extends CI_Controller
 
         $data['title']    = 'Dashboard';
 
-        // $data['bulanKemarin']        = date('F Y', strtotime('-1 month'));
-        // $data['belumbayarKemarin']    = $this->db->query('SELECT * FROM tb_master_data_barang WHERE id NOT IN (SELECT DISTINCT(idPelanggan) FROM tb_pembayaran WHERE MONTH(tanggal)="' . date('m', strtotime('-1 month')) . '" AND YEAR(tanggal)="' . date('Y') . '") AND status="Aktif"');
-        // $data['pelanggan']            = $this->db->query('SELECT * FROM tb_master_data_barang WHERE id NOT IN (SELECT DISTINCT(idPelanggan) FROM tb_pembayaran WHERE MONTH(tanggal)="' . date('m') . '" AND YEAR(tanggal)="' . date('Y') . '") AND status="Aktif"');
-
         $this->load->view('templates/header', $data);
         $this->load->view('templates/sidebar');
         $this->load->view('home/dashboard');

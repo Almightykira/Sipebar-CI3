@@ -4,14 +4,7 @@
             <?= $title ?>
             <small><?= $subtitle ?></small>
         </h1>
-        <ol class="breadcrumb">
-            <li><a href="<?= base_url('index.php/admin/dashboard') ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-            <li class="active"><?= $title ?></li>
-        </ol>
     </section>
-    <?php
-    date_default_timezone_set('Asia/Jakarta');
-    ?>
     <section class="content">
         <div class="box">
             <div class="box-body">
@@ -45,9 +38,9 @@
                         <table class="table table-bordered table-striped table-hover" id="dataTable">
                             <thead>
                                 <tr>
-                                    <th>Date</th>
-                                    <th>No issuing</th>
-                                    <th>Supplaier</th>
+                                    <th>Tanggal</th>
+                                    <th>Faktur</th>
+                                    <th>Picker</th>
                                     <th>Remarks</th>
                                 </tr>
                             </thead>

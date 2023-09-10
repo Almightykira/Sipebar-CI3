@@ -34,7 +34,7 @@
                             echo $this->db->query('SELECT id FROM tb_receiving')->num_rows();
                             ?>
                         </h3>
-                        <p>Total Receiving Barang</p>
+                        <p>Total Barang Masuk</p>
                     </div>
                     <div class="icon">
                         <div class="fa fa-bar-chart"></div>
@@ -50,7 +50,7 @@
                             echo $this->db->query('SELECT id FROM tb_issuing')->num_rows();
                             ?>
                         </h3>
-                        <p>Total Issuing Barang</p>
+                        <p>Total Barang Keluar</p>
                     </div>
                     <div class="icon">
                         <div class="fa fa-truck"></div>
@@ -82,7 +82,7 @@
                             echo $this->db->query('SELECT id FROM tb_brand')->num_rows();
                             ?>
                         </h3>
-                        <p>Total Brand produk</p>
+                        <p>Total Data Obat</p>
                     </div>
                     <div class="icon">
                         <div class="fa fa-diamond"></div>
@@ -90,24 +90,7 @@
                     
                 </div>
             </div>
-            <div class="col-lg-3 col-xs-6">
-                <div class="small-box bg-yellow">
-                    <div class="inner">
-                        <h3>
-                            <?php
-                            echo $this->db->query('SELECT id FROM tb_user WHERE level="Administrator"')->num_rows();
-                            ?>
-                        </h3>
-
-                        <p>Total User</p>
-                    </div>
-                    <div class="icon">
-                        <div class="fa fa-user"></div>
-                    </div>
-                    
-                </div>
-            </div>
-
+            
         </div>
     </section>
 </div>

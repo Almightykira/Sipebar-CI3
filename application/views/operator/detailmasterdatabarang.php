@@ -33,12 +33,12 @@
                             <table class="table table-bordered table-striped table-hover">
                                 <?php foreach ($masterdatabarang->result_array() as $mdb) { ?>
                                     <tr>
-                                        <td>Part Number</td>
+                                        <td>Kode Barang</td>
                                         <td>:</td>
                                         <td><?= $mdb['part_number'] ?></td>
                                     </tr>
                                     <tr>
-                                        <td>Category</td>
+                                        <td>Kategori</td>
                                         <td>:</td>
                                         <td>
                                             <?php
@@ -52,7 +52,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Brand</td>
+                                        <td>Nama Barang</td>
                                         <td>:</td>
                                         <td>
                                             <?php
@@ -81,7 +81,7 @@
                                         <td><?= $mdb['move_type'] ?></td>
                                     </tr>
                                     <tr>
-                                        <td>Price</td>
+                                        <td>Harga barang</td>
                                         <td>:</td>
                                         <td><?= $mdb['price'] ?></td>
                                     </tr>
@@ -100,7 +100,7 @@
             <div class="col-md-4">
                 <div class="box">
                     <div class="box-header">
-                        <h4 class="box-title">Image</h4>
+                        <h4 class="box-title">Gambar</h4>
 
                     </div>
                     <div class="box-body">
